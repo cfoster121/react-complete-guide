@@ -1,13 +1,14 @@
 import './ExpenseItem.css'
 
-const ExpenseItem = () => {
-    return (
-        <div>
-            <h1>Expense item component</h1>
-            <p>Date</p>
-            <p>Amount</p>
-        </div>
-    )
+const ExpenseItem = (props) => {
+
+return (
+    <div className='expense-item'>
+    <div className= 'expense-item__description'>
+        <h2>{props.title}</h2>
+    </div>
+    </div>
+)
 }
 
 export default ExpenseItem
